@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平居中</title>
+    <style>
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            /*对于块级元素中的内联元素*/
+           /* text-align: center;*/
+            /*使用定位*/
+            position: relative;
+        }
+        .content{
+            width: 40px;
+            height: 40px;
+            border: 4px solid red;
+            /*对于这个元素本身*/
+            /*margin: auto;*/
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+            top: 0;
+        }
+        /* 不定宽度*/
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color:#ccc;
+            /*text-align: center;*/
+            position: relative;
+        }
+        .child{
+          /*  display: inline;*/
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 3px solid red;
+        }
+
+        /*定不定高度都可以*/
+        .flexBox{
+            width: 200px;
+            height: 200px;
+            background-color:gray;
+            display: flex;
+            justify-content: center;
+        }
+        .son{
+            width: 40px;
+            height: 40px;
+            border: 4px solid red;
+        }
+    </style>
+</head>
+<body>
+<!--定宽-->
+<section class="father">
+   <!-- <span class="content">span</span>-->
+    <div class="content">div</div>
+</section>
+
+<!--不定宽-->
+<section class="box">
+    <div class="child">child</div>
+</section>
+
+<!--使用flexbox布局，宽度定不定都可以-->
+<section class="flexBox">
+    <div class="son">这是son</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直水平居中</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: #cccccc;
+            /*display: flex;
+            justify-content: center;
+            align-items: center;*/
+            position: relative;
+        }
+        /*.content{
+            background-color: beige;
+        }*/
+        .son{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            /*top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;*/
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <!--不定宽定宽都行-->
+    <!--<div class="content">div</div>-->
+
+    <!--定宽-->
+    <div class="son">div</div>
+</div>
+</body>
+</html>

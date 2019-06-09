@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>等分布局</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+       .demo{
+         display: flex;
+         flex-direction:column;
+       }
+        .content{
+            display: flex;
+        }
+        .content>div{
+            flex: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="demo">
+    <header>头</header>
+    <div class="content">
+        <div>左边</div>
+        <div >中间</div>
+        <div>右边</div>
+    </div>
+    <footer>尾</footer>
+</div>
+</body>
+</html>
