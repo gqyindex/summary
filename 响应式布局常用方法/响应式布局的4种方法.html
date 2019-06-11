@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式布局</title>
+</head>
+<body>
+<!--百分比布局，宽度尽量使用百分比-->
+
+<!--媒体查询-->
+@media screen and (max-width: 960px){
+   body{
+        background-color:#FF6699
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color:#00FF66;
+    }
+}
+
+<!--rem布局-->
+当页面的视图容器大小改变时，动态改变font-size
+对html{font-size:100px} 把10px当作一个1rem的值
+根据当前屏幕宽度跟设计稿的宽度比例，动态计算font-size
+<script>
+    ~function () {
+        var desW = 640;
+        var winW = document.documentElement.clientHeight;
+        var n = winW / desW ;
+        document.documentElement.style.fontSize = n*100 + 'px'
+    }()
+</script>
+
+<!--vw/vn 都是css3中新增的单位，分别代表视图窗口的宽度，视图窗口的高度，都是相对于视口的-->
+</body>
+</html>

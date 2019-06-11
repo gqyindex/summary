@@ -1,4 +1,5 @@
 Bom是浏览器对象
+ （我常用的几个）
  location对象 =====》
                 location.href ===> 设置当前文档的URL
                 location.hash ===> 返回URL#后的内容
@@ -8,3 +9,6 @@ Bom是浏览器对象
                 history.go(num) ===> 前进或后退指定的页面数
                 history.back() ====> 后退一页
                 history.forward ====> 前进一页
+ Navigator对象 ====》
+                navigator.userAgent ===>返回用户代理头的字符串表示（就是包括浏览器版本信息等）
+                navigator.cookieEnables ====>返回浏览器是否支持cookie

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电子商城</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!--导航条-->
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">电子商城</a>
+        </div>
+        <!--登录注册部分-->
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">商品</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">登录</a></li>
+        </ul>
+        <!--搜索框部分-->
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="输入商品名称...">
+                </div>
+                <button type="submit" class="btn btn-primary">搜索</button>
+            </form>
+    </div>
+</nav>
+
+<!--内容-->
+<div class="container content">
+    <div class="row">
+        <!--左侧信息-->
+        <div class="col-md-3 info left_info">
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-primary">电子产品</button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">手机</a>
+                    <span class="label label-primary">234</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">笔记本</a>
+                    <span class="label label-success">34</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">平板</a>
+                    <span class="label label-danger">4</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">显示器</a>
+                    <span class="label label-info">434</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">游戏机</a>
+                    <span class="label label-success">34</span>
+                </button>
+            </div>
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-success">智能数码</button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">手环</a>
+                    <span class="label label-danger">300</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">手表</a>
+                    <span class="label label-success">340</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">VR眼镜</a>
+                    <span class="label label-info">735</span>
+                </button>
+            </div>
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-primary">手机配件</button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">耳机</a>
+                    <span class="label label-warning">468</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">移动电源</a>
+                    <span class="label label-success">158</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">手机壳</a>
+                    <span class="label label-info">408</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">数据线</a>
+                    <span class="label label-primary">89</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">手机支架</a>
+                    <span class="label label-danger">95</span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <a href="#">手机贴膜</a>
+                    <span class="label label-warning">807</span>
+                </button>
+            </div>
+        </div>
+        <!--右侧产品展示-->
+        <div class="col-md-9 right_info">
+            <div>
+                <!--路径导航-->
+                <ol class="breadcrumb">
+                    <li><a href="#">首页</a></li>
+                    <li class="active">手机</li>
+                </ol>
+                <!--手机商品信息-->
+                <ul>
+                    <li>
+                        <img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg">
+                        <h3>OPPO</h3>
+                        <h4>3999</h4>
+                        <p class="title">OPPO A57 3GB+32GB内存版</p>
+                        <p>黑色 全网通4G手机 双卡双待</p>
+                        <button class="btn btn-success">立即购买</button>
+                    </li>
+                    <li>
+                        <img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg">
+                        <h3>荣耀</h3>
+                        <h4>1598</h4>
+                        <p class="title">荣耀8 3GB+32GB</p>
+                        <p>全网通版 珠光白</p>
+                        <button class="btn btn-success">立即购买</button>
+                    </li>
+                    <li>
+                        <img src="https://cdn.itbegin.com//pics/admin/2017/6/2e393b86b0db4fa1a56f976aac1c653e.jpg">
+                        <h3>iPhone7</h3>
+                        <h4>6388</h4>
+                        <p class="title">Apple Iphone 7 Plus 128G</p>
+                        <p>金色 移动联通电信4G手机</p>
+                        <button class="btn btn-success">立即购买</button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <!--路径导航-->
+                <ol class="breadcrumb">
+                    <li><a href="#" >首页</a></li>
+                    <li class="active">电脑</li>
+                </ol>
+                <!--手机商品信息-->
+                <ul>
+                    <li>
+                        <img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg">
+                        <h3>MacBookAir</h3>
+                        <h4>5988</h4>
+                        <p class="title">Apple MacBook Air 13.3英寸笔记本电脑</p>
+                        <p>英寸笔记本电脑</p>
+                        <button class="btn btn-success">立即购买</button>
+                    </li>
+                    <li>
+                        <img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg">
+                        <h3>戴尔DELL灵越</h3>
+                        <h4>4199</h4>
+                        <p class="title">戴尔DELL灵越5565-R256A 15.6英寸笔记本电脑</p>
+                        <p>灰四核处理器8G内存 256SSD</p>
+                        <button class="btn btn-success">立即购买</button>
+                    </li>
+                    <li>
+                        <img src="https://cdn.itbegin.com//pics/admin/2017/6/636f83f02480403e94ab28376ca135f7.jpg">
+                        <h3>联想(Lenovo)拯救者</h3>
+                        <h4>6599</h4>
+                        <p class="title">联想(Lenovo)拯救者</p>
+                        <p>R720 15.6英寸游戏</p>
+                        <button class="btn btn-success">立即购买</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--底部版权信息-->
+<footer>
+    <p>@2017| Email:info@itbegin.com</p>
+</footer>
+</body>
+</html>
